@@ -1,56 +1,66 @@
 const categories = [
   {
-    id: 'clothes',
+    id: 'equipments',
     items: [
       {
-        name: 'Flour - Chickpea',
+        name: 'ABS Gymnastic Rings',
         price: 947395,
-        imageUrl: 'http://dummyimage.com/220x100.png/cc0000/ffffff',
+        imageUrl:
+          'https://www.streetgains.eu/Files/6/104000/104439/ProductPhotos/315x315/1637847891.jpg.webp',
       },
       {
-        name: 'Appetizer - Veg Assortment',
+        name: 'Competition Ring Straps',
         price: 964204,
-        imageUrl: 'http://dummyimage.com/188x100.png/ff4444/ffffff',
+        imageUrl:
+          'https://www.streetgains.eu/Files/6/104000/104439/ProductPhotos/315x315/814429934.png.webp',
       },
       {
-        name: 'Eggroll',
+        name: 'Gym Rings',
         price: 196655,
-        imageUrl: 'http://dummyimage.com/130x100.png/cc0000/ffffff',
+        imageUrl:
+          'https://www.streetgains.eu/Files/6/104000/104439/ProductPhotos/315x315/344791961.jpg.webp',
       },
       {
-        name: 'Tabasco Sauce, 2 Oz',
+        name: 'Door Anchor For Gymnastic Rings',
         price: 775586,
-        imageUrl: 'http://dummyimage.com/117x100.png/cc0000/ffffff',
+        imageUrl:
+          'https://www.streetgains.eu/Files/6/104000/104439/ProductPhotos/315x315/824197194.png.webp',
       },
       {
-        name: 'Bread Base - Gold Formel',
+        name: 'Straps For Gymnastic Rings',
         price: 1656732,
-        imageUrl: 'http://dummyimage.com/137x100.png/dddddd/000000',
+        imageUrl:
+          'https://www.streetgains.eu/Files/6/104000/104439/ProductPhotos/315x315/1591487281.jpg.webp',
       },
       {
-        name: 'Sage - Fresh',
+        name: 'Adjustable Fitness Equalizer Dip Bar',
         price: 1237968,
-        imageUrl: 'http://dummyimage.com/170x100.png/ff4444/ffffff',
+        imageUrl:
+          'https://www.streetgains.eu/Files/6/104000/104439/ProductPhotos/315x315/1051771235.png.webp',
       },
       {
-        name: 'Chocolate - Semi Sweet',
+        name: 'Low Parallettes V2',
         price: 1994999,
-        imageUrl: 'http://dummyimage.com/165x100.png/dddddd/000000',
+        imageUrl:
+          'https://www.streetgains.eu/Files/6/104000/104439/ProductPhotos/315x315/529339442.png.webp',
       },
       {
-        name: 'Shark - Loin',
+        name: 'Mini Wooden Parallettes',
         price: 1314400,
-        imageUrl: 'http://dummyimage.com/180x100.png/cc0000/ffffff',
+        imageUrl:
+          'https://www.streetgains.eu/Files/6/104000/104439/ProductPhotos/315x315/1327321596.png.webp',
       },
       {
-        name: 'Bandage - Flexible Neon',
+        name: 'Weight Vest 20KG Black / Grey',
         price: 1742821,
-        imageUrl: 'http://dummyimage.com/130x100.png/ff4444/ffffff',
+        imageUrl:
+          'https://www.streetgains.eu/Files/6/104000/104439/ProductPhotos/315x315/344792305.jpg.webp',
       },
       {
-        name: 'Oil - Hazelnut',
+        name: 'Ab Core Wheels',
         price: 296780,
-        imageUrl: 'http://dummyimage.com/140x100.png/cc0000/ffffff',
+        imageUrl:
+          'https://www.streetgains.eu/Files/6/104000/104439/ProductPhotos/315x315/592625322.png.webp',
       },
     ],
   },
@@ -110,12 +120,13 @@ const categories = [
     ],
   },
   {
-    id: 'equipment',
+    id: 'clothes',
     items: [
       {
         name: 'Isomalt',
         price: 1132858,
-        imageUrl: 'http://dummyimage.com/100x100.png/cc0000/ffffff',
+        imageUrl:
+          'https://cdn.shopify.com/s/files/1/1367/5201/products/LegacyDropArmTankBROSLimestoneMarlA1A8R-NBJZ1_600x.jpg?v=1666177954',
       },
       {
         name: 'Bread - Triangle White',

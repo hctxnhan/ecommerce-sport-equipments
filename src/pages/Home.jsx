@@ -28,7 +28,7 @@ function Home() {
           title='Supplement'
           subtitle='Healthier everyday with less effort that put into your meals.'
         />
-        <Reviews />
+        {/* <Reviews /> */}
       </div>
     </div>
   );

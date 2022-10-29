@@ -2,7 +2,10 @@ import { useState } from 'react';
 import Button from '../components/Button';
 import Input from '../components/Input';
 import Section from '../components/Section';
-import { loginUserWithEmailAndPassword } from '../firebase/auth';
+import {
+  loginUserWithEmailAndPassword,
+  loginWithGooglePopup,
+} from '../firebase/auth';
 import useGoHomeIfLoggedIn from '../hooks/useGoHomeIfLoggedIn';
 
 function Login() {
@@ -12,6 +15,10 @@ function Login() {
 
   function handleLoginSubmit(e) {
     loginUserWithEmailAndPassword(email, password);
+  }
+
+  function handleLoginGoogle(e) {
+    loginWithGooglePopup();
   }
 
   return (
@@ -33,6 +40,10 @@ function Login() {
                 setValue={setPassword}
                 label={'password'}
                 options={{ type: 'password' }}
+              />
+              <Button
+                text={'Login with Google'}
+                handleClick={handleLoginGoogle}
               />
               <Button handleClick={handleLoginSubmit} text={'Login'} />
             </div>

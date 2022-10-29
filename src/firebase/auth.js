@@ -6,7 +6,7 @@ import {
   signOut,
 } from 'firebase/auth';
 import { createUserAdditionalData, loadUserAdditionalData } from './firestore';
-
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 const defaultAvatarUrl =
   'https://png.pngtree.com/png-clipart/20210129/ourmid/pngtree-default-male-avatar-png-image_2811083.jpg';
 
@@ -59,3 +59,21 @@ export const logOutUser = async () => {
 export function onAuthStateChangedListener(callback) {
   return onAuthStateChanged(auth, callback);
 }
+
+const GoogleProvider = new GoogleAuthProvider();
+
+export const loginWithGooglePopup = async () => {
+  try {
+    const result = await signInWithPopup(auth, GoogleProvider);
+    const user = result.user;
+    const userAdditionalData = await loadUserAdditionalData(user.uid);
+    if (!userAdditionalData) {
+      await createUserAdditionalData(user.uid, {
+        name: user.displayName,
+        imageUrl: user.photoURL,
+      });
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};

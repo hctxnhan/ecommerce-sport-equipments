@@ -24,7 +24,9 @@ function ProductCard({
         onMouseLeave={() => setHover(false)}
       >
         <img
-          className='w-full h-full aspect-3/4 object-cover object-center'
+          className={`w-full h-full aspect-3/4 object-cover object-center transform ${
+            isHover && 'scale-110 brightness-90'
+          } transition-all`}
           src={imageUrl}
           alt=''
         />
