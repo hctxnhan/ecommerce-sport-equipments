@@ -58,7 +58,7 @@ function Cart() {
           )}
         </tbody>
       </table>
-      <div className='flex justify-end justify-center py-6'>
+      <div className='flex justify-end md:justify-center py-6'>
         {!isEmpty && (
           <div className='max-w-max flex flex-col gap-3'>
             <div className='flex text-3xl justify-between uppercase gap-10'>

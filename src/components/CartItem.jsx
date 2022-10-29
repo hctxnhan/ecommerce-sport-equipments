@@ -37,22 +37,24 @@ function CartItem({ item }) {
           </button>
         </div>
       </td>
-      <td className='align-top pt-8 pb-8 flex items-center gap-4 md:hidden'>
-        <button onClick={() => dispatch(removeItem(id))}>
-          <AiFillMinusCircle size={30} />
-        </button>
-        <p className='w-10 text-center' type='text'>
-          {quantity} + in here
-        </p>
-        <button onClick={() => dispatch(addItem(item))}>
-          <AiFillPlusCircle size={30} />
-        </button>
-        <button
-          onClick={() => dispatch(clearItems(id))}
-          className='text-gray-500 hover:text-gray-900'
-        >
-          <MdOutlineDeleteOutline size={20} />
-        </button>
+      <td className='align-top pt-8 pb-8 md:hidden'>
+        <div className='flex gap-1 items-center'>
+          <button onClick={() => dispatch(removeItem(id))}>
+            <AiFillMinusCircle size={30} />
+          </button>
+          <p className='w-10 text-center' type='text'>
+            {quantity}
+          </p>
+          <button onClick={() => dispatch(addItem(item))}>
+            <AiFillPlusCircle size={30} />
+          </button>
+          <button
+            onClick={() => dispatch(clearItems(id))}
+            className='text-gray-500 hover:text-gray-900'
+          >
+            <MdOutlineDeleteOutline size={20} />
+          </button>
+        </div>
       </td>
       <td className='md:hidden align-top pt-8 pb-8 text-right'>
         <p className='mt-2 text-xl'>{price * quantity} VND</p>

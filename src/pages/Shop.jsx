@@ -54,7 +54,7 @@ export default function Shop() {
       <div className=''>
         <Filter />
       </div>
-      <div className='min-h-screen'>
+      <div className='min-h-remainScreen'>
         {results.length > 0 && (
           <div className='-m-10'>
             {results.map((category) => {
