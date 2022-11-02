@@ -23,7 +23,7 @@ function ProductCard({
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
       >
-        <div className='shadow-lg rounded-lg overflow-hidden'>
+        <div className='shadow-md shadow-gray-300 shadow- rounded-lg overflow-hidden'>
           <img
             className={`w-full h-full  aspect-3/4 object-cover object-center transform ${
               isHover && 'scale-[1.2] brightness-90'
@@ -40,12 +40,14 @@ function ProductCard({
           <Button handleClick={handleAddToCart} text='Add to cart' />
         </div>
       </div>
-      <div className='flex justify-between mt-2 gap-6'>
-        <p className='uppercase text-lg md:text-sm xl:text-base'>{name}</p>
+      <div className='flex justify-between mt-3 gap-1 flex-col'>
         <p className='flex gap-1'>
           {/* <span className='text-gray-500'>from</span> */}
-          <span className='text-lg md:text-sm xl:text-base'>{price}đ</span>
+          <span className='text-3xl flex items-center gap-2'>
+            {price} <span className='text-gray-500 text-sm'>VND</span>
+          </span>
         </p>
+        <p className='uppercase text-lg '>{name}</p>
       </div>
     </div>
   );
