@@ -23,8 +23,8 @@ function Register() {
 
   return (
     <div className='min-h-remainScreen'>
-      <Section title={'Register'} subtitle={'Welcome.'}>
-        <div className='grid grid-cols-2 gap-8 h-full items-center md:grid-cols-1'>
+      <div className='grid grid-cols-2 gap-8 h-full items-center md:grid-cols-1 grid-rows-[100vh]'>
+        <Section title={'Login'} subtitle={'Welcome back.'}>
           <div className=''>
             <div className='flex flex-col gap-4 pr-10'>
               <Input value={name} setValue={setName} label={'Name'} />
@@ -51,11 +51,15 @@ function Register() {
               <Button handleClick={handleRegisterSubmit} text={'Register'} />
             </div>
           </div>
-          <div className='bg-pink-200 h-full md:hidden'>
-            <img src='' alt='' />
-          </div>
+        </Section>
+        <div className='h-full md:hidden relative'>
+          <img
+            className='absolute top-0 right-0 w-full h-full left-0 object-center  object-cover'
+            src='http://m.gettywallpapers.com/wp-content/uploads/2022/07/Workout-Background-Images-1536x864.jpg'
+            alt=''
+          />
         </div>
-      </Section>
+      </div>
     </div>
   );
 }

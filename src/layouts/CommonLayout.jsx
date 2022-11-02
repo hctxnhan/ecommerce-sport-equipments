@@ -26,8 +26,9 @@ function CommonLayout() {
           <Route path='*' element={<Error />} />
         </Routes>
       </div>
-
-      <Footer />
+      <div className='z-30'>
+        <Footer />
+      </div>
     </>
   );
 }

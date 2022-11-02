@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import Input from '../components/Input';
+import Portal from '../components/PortalComponent';
 import Section from '../components/Section';
 import {
   loginUserWithEmailAndPassword,
@@ -23,8 +25,8 @@ function Login() {
 
   return (
     <div className='min-h-remainScreen'>
-      <Section title={'Login'} subtitle={'Welcome back.'}>
-        <div className='grid grid-cols-2 gap-8 items-center md:grid-cols-1'>
+      <div className='grid grid-cols-2 gap-8 items-center md:grid-cols-1 grid-rows-[100vh]'>
+        <Section title={'Login'} subtitle={'Welcome back.'}>
           <div className=''>
             <div className='flex flex-col gap-4 pr-10'>
               <Input
@@ -41,18 +43,37 @@ function Login() {
                 label={'password'}
                 options={{ type: 'password' }}
               />
-              <Button
-                text={'Login with Google'}
-                handleClick={handleLoginGoogle}
-              />
-              <Button handleClick={handleLoginSubmit} text={'Login'} />
+              <div className='flex gap-6 justify-between items-center md:flex-col'>
+                <div className='md:order-2'>
+                  <p className='text-gray-500'>
+                    Do not have account yet?{' '}
+                    <Link
+                      to={'/register'}
+                      className='hover:text-gray-900 underline'
+                    >
+                      Register now
+                    </Link>
+                  </p>
+                </div>
+                <div className='flex gap-4 self-stretch md:flex-col md:order-1'>
+                  <Button
+                    text={'Login with Google'}
+                    handleClick={handleLoginGoogle}
+                  />
+                  <Button handleClick={handleLoginSubmit} text={'Login'} />
+                </div>
+              </div>
             </div>
           </div>
-          <div className='bg-pink-200 h-full md:hidden'>
-            <img src='' alt='' />
-          </div>
+        </Section>
+        <div className='h-full md:hidden relative'>
+          <img
+            className='absolute top-0 right-0 w-full h-full left-0 object-center  object-cover'
+            src='http://m.gettywallpapers.com/wp-content/uploads/2022/07/Workout-Background-Images-1536x864.jpg'
+            alt=''
+          />
         </div>
-      </Section>
+      </div>
     </div>
   );
 }
