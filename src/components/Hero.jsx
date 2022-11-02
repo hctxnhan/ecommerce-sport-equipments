@@ -18,8 +18,8 @@ function Hero() {
         something you’ve never done.”
       </p>
       <img
-        className='absolute inset-0 w-full h-full object-cover object-center z-0'
-        src='https://c4.wallpaperflare.com/wallpaper/787/610/414/muscle-press-pose-athlete-workout-hd-wallpaper-preview.jpg'
+        className='absolute inset-0 w-full h-full object-cover object-top z-0'
+        src='https://img5.goodfon.com/wallpaper/nbig/f/15/back-fitness-gym-power-pose.jpg'
         alt=''
       />
     </div>
