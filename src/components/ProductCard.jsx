@@ -19,17 +19,19 @@ function ProductCard({
   return (
     <div className='w-full'>
       <div
-        className='relative rounded-lg overflow-hidden'
+        className='relative rounded-lg'
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
       >
-        <img
-          className={`w-full h-full aspect-3/4 object-cover object-center transform ${
-            isHover && 'scale-110 brightness-90'
-          } transition-all`}
-          src={imageUrl}
-          alt=''
-        />
+        <div className='shadow-lg rounded-lg overflow-hidden'>
+          <img
+            className={`w-full h-full  aspect-3/4 object-cover object-center transform ${
+              isHover && 'scale-[1.2] brightness-90'
+            } transition-all duration-300 `}
+            src={imageUrl}
+            alt=''
+          />
+        </div>
         <div
           className={`absolute top-1/2 left-1/2 transfrom -translate-x-1/2 -translate-y-1/2 opacity-0 ${
             isHover && 'opacity-100'

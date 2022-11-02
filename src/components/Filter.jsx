@@ -32,12 +32,14 @@ function Filter() {
 
   return (
     <div className='flex flex-col gap-6'>
-      <div>
-        <SearchBar
-          search={searchQuery}
-          setSearch={setSearchQuery}
-          submitSearch={() => dispatch(setSearch(searchQuery))}
-        />
+      <div className=''>
+        <div className='mb-4'>
+          <SearchBar
+            search={searchQuery}
+            setSearch={setSearchQuery}
+            submitSearch={() => dispatch(setSearch(searchQuery))}
+          />
+        </div>
         <p className='text-lg uppercase mb-2'>Category</p>
         <ul className='pl-4 flex flex-col gap-1 lowercase'>
           {categoryList.map((category) => (

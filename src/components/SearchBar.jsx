@@ -9,7 +9,7 @@ function SearchBar({ search, setSearch, submitSearch }) {
         placeholder='Search product...'
         type='text'
         onChange={(e) => setSearch(e.target.value)}
-        className='py-2 text-lg rounded-lg focus:outline-none'
+        className='py-2 text-lg rounded-lg focus:outline-none px-2'
       />
       <Button handleClick={submitSearch} text={<AiOutlineSearch />} />
     </div>
