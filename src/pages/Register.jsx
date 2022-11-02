@@ -55,7 +55,7 @@ function Register() {
         <div className='h-full md:hidden relative'>
           <img
             className='absolute top-0 right-0 w-full h-full left-0 object-center  object-cover'
-            src='http://m.gettywallpapers.com/wp-content/uploads/2022/07/Workout-Background-Images-1536x864.jpg'
+            src='https://c4.wallpaperflare.com/wallpaper/206/268/839/pose-muscle-muscle-rod-press-hd-wallpaper-preview.jpg'
             alt=''
           />
         </div>
