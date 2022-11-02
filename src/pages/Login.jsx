@@ -24,7 +24,7 @@ function Login() {
   return (
     <div className='min-h-remainScreen'>
       <Section title={'Login'} subtitle={'Welcome back.'}>
-        <div className='grid grid-cols-2 gap-8 items-center'>
+        <div className='grid grid-cols-2 gap-8 items-center md:grid-cols-1'>
           <div className=''>
             <div className='flex flex-col gap-4 pr-10'>
               <Input
@@ -48,7 +48,7 @@ function Login() {
               <Button handleClick={handleLoginSubmit} text={'Login'} />
             </div>
           </div>
-          <div className='bg-pink-200 h-full'>
+          <div className='bg-pink-200 h-full md:hidden'>
             <img src='' alt='' />
           </div>
         </div>
